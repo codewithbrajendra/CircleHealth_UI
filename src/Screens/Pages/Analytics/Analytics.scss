@@ -1,0 +1,50 @@
+.AnalyticsPage {
+  input[type="date"] + label {
+    text-align: left;
+  }
+  .mr-2 {
+    margin-right: 10px;
+  }
+  .tableFilter {
+    .flex-fill {
+      width: 100%;
+    }
+  }
+  .mw-120 {
+    min-width: 120px;
+  }
+  .btn-theme1-circle {
+    background: #2a806f;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.dateRangePickerBox {
+  input {
+    // display: block;
+    // width: 100%;
+    // padding: 0.375rem 0.75rem;
+    // font-weight: 400;
+    // line-height: 1.5;
+    // color: #212529;
+    // background-color: #fff;
+    // background-clip: padding-box;
+    // border: 1px solid #ced4da;
+    // border-radius: 0.25rem;
+
+    background: #fff
+      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbBAMAAAB7DzlbAAAAJ1BMVEVHcEwpgG4qgG4qgW4ogm0ngHApgG4mgHApf24pgG4ogG4ogW4qgG967OpeAAAADHRSTlMAwIB/PUDXGvCwoGfWZgEXAAAAeUlEQVQY02NgYGBYBsQM0xigQCYASJwBM9k3G+csNjY2PmNsXcDAEHEGDloYGOYkKeUsUlJSOqOkeAyovgCur6cARKqB9M8Em3aGgQHJbDReKAyE5AB5SADIE4SDHgKmDCyvAM4D+l1G2BgKLIHhEoMSZuxKcFDAAAD97Enc+8PuEgAAAABJRU5ErkJggg==)
+      96% 50% no-repeat;
+    background-size: 16px;
+    cursor: pointer;
+    &:valid {
+      border: 1px solid #ced4da;
+    }
+  }
+}

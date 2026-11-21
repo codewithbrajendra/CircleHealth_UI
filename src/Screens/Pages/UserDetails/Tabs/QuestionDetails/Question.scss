@@ -1,0 +1,67 @@
+.MyAccordionWrapper {
+  //   border: solid 1px #c5dde4;
+  //   border-radius: 4px;
+  .w-100-30 {
+    min-width: calc(100%);
+  }
+  .accordion-item .accordion-button {
+    padding: 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .accordion .titleRight > div > div {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .accordion-item {
+    margin-bottom: 15px;
+    border-top: 1px solid #d9ebef !important;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #d9ebef;
+  }
+  .accordion-button:not(.collapsed)::after {
+    filter: hue-rotate(225deg);
+  }
+  .accordion-bottom:focus {
+    box-shadow: 0 !important;
+  }
+
+  .titleLeft h6 {
+    font-weight: 700;
+  }
+  .QusIcon {
+    background: #20534b;
+    color: #fff;
+    padding: 5px 8px;
+    margin-right: 7px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .AnsIcon {
+    margin-right: 5px;
+    font-weight: 600;
+  }
+  .QusText,
+  .QusText {
+    font-size: 15px;
+  }
+  .QusText {
+    padding-right: 15px;
+    font-weight: 600;
+  }
+  .QusScore {
+    font-weight: 600;
+  }
+  .QusAns-Item {
+    margin-bottom: 15px;
+  }
+}
+.pr-2 {
+  padding-right: 10px;
+}

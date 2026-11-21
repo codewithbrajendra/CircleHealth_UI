@@ -1,0 +1,54 @@
+@import "../../../Assets/Scss/_variables.scss";
+.input__Wrapper {
+  position: relative;
+
+  input {
+    font-size: 15px;
+  }
+  input[type="date"] + .input__label {
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .input__label {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    padding: 0 5px;
+    font-size: 13px;
+    background: #fff;
+    color: $color-green-1;
+    transition: all 0.3s ease-out;
+  }
+  .input__label_1 {
+    font-size: 13px;
+  }
+
+  input:valid,
+  input:focus {
+    border: 1px solid $color-green-2;
+  }
+
+  input:focus + .input__label,
+  input:valid + .input__label {
+    transform: translate(0px, -17px);
+    font-size: 11px;
+    width: auto;
+  }
+  .has-error {
+    color: #ff0000;
+    text-align: left;
+    font-size: 13px;
+    display: block;
+  }
+  .error {
+    input {
+      border-color: #ff0000;
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(253, 46, 13, 0.25);
+      }
+    }
+  }
+}

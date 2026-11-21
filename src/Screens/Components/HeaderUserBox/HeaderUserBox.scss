@@ -1,0 +1,54 @@
+@import "../../../Assets/Scss/_variables.scss";
+.HeaderUserBox {
+  .LoggedIn_User_Info {
+    .User_Details {
+      padding-bottom: 5px;
+      .User_Name {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .Date {
+        line-height: 1;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .LoggedIn_User_Info {
+    .User_Profile {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: url("../../../Assets/Images/userIcon.png");
+      margin-right: 10px;
+      background-position: center;
+      background-size: 60px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      border: solid 2.5px #fff;
+    }
+    .User_Details {
+      color: $color-black;
+      padding-bottom: 5px;
+      .User_Name {
+        font-weight: 600;
+      }
+      .Date {
+        line-height: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Right_area {
+    display: none;
+  }
+  .mobileUserBox {
+    .Right_area.HeaderUserBox {
+      display: block;
+      .User_Details {
+        display: none;
+      }
+    }
+  }
+}

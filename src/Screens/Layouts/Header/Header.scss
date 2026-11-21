@@ -1,0 +1,44 @@
+@import "../../../Assets/Scss/_variables.scss";
+
+.Top_Header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  padding: 6px 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+
+  .img_logo {
+    max-height: 45px;
+    margin-left: 10px;
+  }
+  .text_logo {
+    color: #fff;
+    font-weight: 600;
+  }
+  .menuToggle {
+    .bar {
+      width: 30px;
+      height: 2px;
+      background-color: $color-green-2;
+      margin-bottom: 8px;
+      border-radius: 10px;
+    }
+  }
+}
+.menuOpen {
+  .menuToggle {
+    .bar {
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:first-child {
+        transform: rotateZ(45deg) translate(7px, 7px);
+      }
+      &:last-child {
+        transform: rotateZ(-45deg) translate(7px, -7px);
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import "./Assets/Scss/_variables.scss";
+@import "./Assets/Scss/_animations.scss";
+@import "./Assets/Scss/_utilities.scss";
+@import "./Assets/Scss/_mixins.scss";
+@import "./Assets/Scss/_typography.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.d-inline {
+  display: inline-block !important;
+}
+
+.btn-theme1-circle {
+  background: $color-green-2;
+  border-radius: 30px;
+  color: $color-white;
+  font-size: 14px;
+  &:hover {
+    background: $color-green-1;
+    color: $color-white;
+  }
+}
+
+.btn-theme2-circle {
+  background: transparent;
+  border-radius: 30px;
+  font-size: 14px;
+  border: 1px solid;
+  color: $color-green-1;
+}
+
+.bg_dark {
+  background: $color-black;
+}
+.bg_dark2 {
+  background: $color-black2;
+}
+.bg_white {
+  background: $color-white;
+}
+.alignItemsCenter {
+  align-items: center;
+}
+
+.form-control {
+  border: 1px solid $color-green-4;
+}
+.auth_card_bg {
+  background-color: $color-green-5 !important;
+}
+
+.Main_Area {
+  padding-left: 220px;
+  padding-top: 57px;
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+.MobileScreen {
+  .Main_Area {
+    padding-left: 0px;
+  }
+}
+.UserLoggedIn {
+  .Page_404 {
+    .h-100vh {
+      min-height: calc(100vh - 97px);
+    }
+  }
+}
+
+.UserLogout {
+  .Top_Header,
+  .Sidebar_Wrapper,
+  .Footer {
+    display: none;
+  }
+  .Main_Area {
+    padding: 0;
+  }
+}
+
+.selectStyle {
+  font-size: 14px;
+  height: 38px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px $color-grey-4;
+  border-radius: 10px;
+  background-color: $color-grey-4;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $color-grey-2;
+}
+
+.scroll,
+body {
+  scrollbar-color: $color-grey-4 rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+}
+
+[type="date"] {
+  background: #fff url("./Assets/Images/Icon-feather-calendar.png") 96% 50%
+    no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+.inputValidityloader {
+  position: absolute;
+  right: 22px;
+  top: 9px;
+}
+
+.input__Wrapper {
+  .valid {
+    &:valid {
+      border: 1px solid #2a806f;
+    }
+    &:focus {
+      border: 1px solid #2a806f;
+    }
+  }
+  select.error {
+    border: 1px solid #ff0000;
+  }
+}
+.readonly {
+  .readonly_input {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .input__label {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  .flex-xs-direction {
+    flex-direction: column;
+  }
+  .w-sm-100 {
+    width: 100%;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-sm {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../../Assets/Scss/_variables.scss";
+
+.InnerInfoBoxWrapper {
+  background: $color-green-5;
+  padding: 20px;
+  border-radius: 5px;
+  .titleArea {
+    h5 {
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 15px;
+      margin-bottom: 0px;
+    }
+  }
+  .infoArea {
+    padding-top: 15px;
+    border-top: 2px solid $color-grey-3;
+  }
+}
+
+@media (max-width: 767px) {
+  .InnerInfoBoxWrapper {
+    .titleArea {
+      h5 {
+        font-size: 16px;
+      }
+    }
+  }
+}

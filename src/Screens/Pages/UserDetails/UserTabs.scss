@@ -1,0 +1,45 @@
+@import "../../../Assets/Scss/_variables.scss";
+.User_Tab_Wrapper {
+  .tab_nav_item {
+    h5 {
+      font-weight: 400;
+      margin: 0;
+      padding: 10px 20px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+  .tab_nav_item.active {
+    h5 {
+      font-weight: 600;
+      cursor: inherit;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        height: 5px;
+        background: $color-green-2;
+        border-radius: 15px;
+      }
+    }
+  }
+  .tab_nav {
+    border-bottom: 3px solid #c9d6d4;
+  }
+  .dateRangePickerBox {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .User_Tab_Wrapper {
+    .d-flex.tab_nav {
+      flex-wrap: wrap;
+      h5 {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+#Searchbox.HeaderSearch input {
+  font-size: 12px;
+  min-width: 280px;
+  padding-right: 30px;
+}
+#Searchbox.HeaderSearch {
+  position: relative;
+}
+.searchBoxIcon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #ccc;
+}

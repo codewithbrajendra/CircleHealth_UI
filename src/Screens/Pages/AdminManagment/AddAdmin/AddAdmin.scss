@@ -1,0 +1,13 @@
+.input__Wrapper {
+  .valid {
+    &:valid {
+      border: 1px solid #2a806f;
+    }
+    &:focus {
+      border: 1px solid #2a806f;
+    }
+  }
+  select.error {
+    border: 1px solid #ff0000;
+  }
+}

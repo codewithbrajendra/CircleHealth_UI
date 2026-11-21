@@ -1,0 +1,29 @@
+@import "../../../Assets/Scss/variables";
+.forget_link_text {
+  font-size: 13px;
+  text-align: right;
+  display: block;
+  cursor: pointer;
+  color: $color-black2;
+}
+.bg_image1 {
+  background-size: "cover";
+  background-position: "center";
+}
+
+.InputIcon {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  height: 65px;
+  margin: 0 auto;
+  display: block;
+}
+
+.Page_Login input[name="accessCode"] {
+  padding-right: 40px;
+}

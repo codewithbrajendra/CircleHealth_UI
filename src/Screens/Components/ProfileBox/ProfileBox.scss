@@ -1,0 +1,71 @@
+@import "../../../Assets/Scss/_variables.scss";
+.Profile_Box_Wrapper {
+  .ProfileImage {
+    img {
+      max-width: 100%;
+    }
+  }
+  .profile_details {
+    .big-title {
+      h5 {
+        font-weight: 700;
+      }
+    }
+    .title {
+      font-weight: 400;
+    }
+    .info {
+      font-weight: 600;
+    }
+    .longText {
+      word-break: break-all;
+    }
+  }
+  .height-150 {
+    height: 150px;
+  }
+  .editProfile_link {
+    text-align: right;
+    a {
+      color: $color-green-2;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .height-150 {
+      height: 0;
+    }
+    .linksArea {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ProfileImage img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: inherit;
+    }
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: $color-green-2;
+}
+
+@media (max-width: 991px) {
+  .Profile_Box_Wrapper .height-150 {
+    height: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .profile_details {
+    .big-title {
+      h5 {
+        font-size: 16px;
+      }
+    }
+  }
+}

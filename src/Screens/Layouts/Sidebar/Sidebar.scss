@@ -1,0 +1,55 @@
+@import "../../../Assets/Scss/variables";
+.Sidebar_Wrapper {
+  max-width: 220px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 57px;
+  bottom: 0;
+  z-index: 4;
+  transition: all 0.3s ease;
+  background-color: $color-green-5;
+
+  .Nav_List {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin-left: 10px;
+    }
+
+    .menuItem {
+      display: block;
+      padding: 9px 15px;
+      color: $color-green-1;
+      position: relative;
+      padding-left: 9px;
+      .icon-box {
+        display: inline-block;
+        color: $color-green-1;
+        margin-right: 7px;
+      }
+    }
+    .menuItem.active {
+      background: $color-green-4;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .logOutBtn {
+      cursor: pointer;
+    }
+  }
+}
+
+.MobileScreen {
+  .Sidebar_Wrapper {
+    left: -220px;
+  }
+}
+.MobileScreen.menuOpen {
+  .Sidebar_Wrapper {
+    left: 0px;
+  }
+}

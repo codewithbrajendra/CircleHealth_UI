@@ -1,0 +1,24 @@
+@import "../.././../Assets/Scss/_variables.scss";
+.notification_iconBox {
+  position: relative;
+}
+.Notification .notification_icon {
+  color: $color-green-2;
+  cursor: pointer;
+  font-size: 20px;
+}
+.notification_count {
+  position: absolute;
+  font-size: 8px;
+  right: -5px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  cursor: pointer;
+}

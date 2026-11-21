@@ -1,0 +1,24 @@
+@import "../../../Assets/Scss/variables";
+.forget_link_text,
+.login_link {
+  font-size: 13px;
+  text-align: right;
+  display: block;
+  cursor: pointer;
+  color: $color-black2;
+}
+.bg_image1 {
+  background-size: "cover";
+  background-position: "center";
+}
+.login_link {
+  text-align: center;
+}
+.logo-icon {
+  height: 65px;
+  margin: 0 auto;
+  display: block;
+}
+.ForgetCard input[name="email"] {
+  padding-right: 40px;
+}

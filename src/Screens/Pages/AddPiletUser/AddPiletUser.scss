@@ -1,0 +1,51 @@
+@import "../../../Assets/Scss/_variables.scss";
+.profileBox {
+  width: 120px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: $color-green-5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+
+  .profileBox_user_icon {
+    font-size: 50px;
+    color: $color-green-1;
+  }
+  .hiddenFileInput {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 3;
+  }
+  p {
+    font-size: 12px;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: $color-green-1;
+  }
+}
+.overflowHidden {
+  overflow: hidden;
+}
+
+.AddPiletUser {
+  select.error {
+    border-color: #ff0000;
+  }
+}
+
+.inputValidityloader {
+  position: absolute;
+  right: 22px;
+  top: 9px;
+}
+.selectStyle.valid {
+  border: 1px solid $color-green-2;
+}

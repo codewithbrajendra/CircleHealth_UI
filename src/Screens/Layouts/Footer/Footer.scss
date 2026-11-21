@@ -1,0 +1,18 @@
+@import "../../../Assets/Scss/_variables.scss";
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 7px 0;
+  background-color: $color-green-1;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .Footer {
+    position: initial;
+  }
+}

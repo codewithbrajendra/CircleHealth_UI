@@ -1,0 +1,48 @@
+@import "../../../../Assets/Scss/_variables.scss";
+
+.rdt_TableHeadRow {
+  min-height: 42px !important;
+}
+
+.userTableWrapper {
+  .rdt_TableHeadRow {
+    background: $color-green-4;
+    color: $color-green-1;
+    font-weight: 500;
+    .gqExIP {
+      opacity: 0.5;
+    }
+  }
+  .pr-3 {
+    padding-right: 10px;
+  }
+  .mr-2 {
+    margin-right: 10px;
+  }
+  .actBtns {
+    cursor: pointer;
+    color: $color-green-2;
+  }
+
+  .rdt_TableBody {
+    .rdt_TableRow:nth-child(odd) {
+      background: $color-green-5;
+    }
+    .fhCFWO {
+      border: 0px;
+    }
+    .userLink {
+      font-weight: 500;
+      color: $color-green-1;
+      text-decoration: underline;
+    }
+  }
+}
+.tableWrapperBox .loaderWrapper {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
